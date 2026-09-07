@@ -362,6 +362,20 @@
     opacity: 1;
     transform: translateY(0);
   }
+  @media print{
+    .reveal{ opacity: 1 !important; transform: none !important; }
+    .about-panel{
+      grid-template-rows: 1fr !important;
+      opacity: 1 !important;
+      margin-top: 4px !important;
+    }
+    .about-panel.skill-card{
+      padding: 20px 22px !important;
+      border-width: 1px !important;
+      box-shadow: var(--shadow) !important;
+    }
+    .about-toggle{ display: none !important; }
+  }
 
   /* ---------- skills ---------- */
   .skills-grid{
@@ -895,7 +909,7 @@
 
     <div class="edu-row">
       <div class="edu-left">
-        <h3>Higher Secondary Education</h3>
+        <h3>Army Public School</h3>
         <div class="school-meta">Lucknow, Uttar Pradesh</div>
         <div class="degree">Higher Secondary</div>
       </div>
